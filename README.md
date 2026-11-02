@@ -1,24 +1,24 @@
-# Knowledge Runtime
+# Knowkit
 
 **Unified Knowledge Management & Retrieval Runtime**  
 **统一知识管理与检索运行时**
 
-Knowledge Runtime 是面向 Node.js 生态的独立知识基础设施，规划通过融合向量检索、关键词与全文检索、知识图谱和混合检索，提供可关联、可追溯、可扩展的知识管理与检索能力，并支持 GraphRAG。
+Knowkit 是面向 Node.js 生态的独立知识基础设施，规划通过融合向量检索、关键词与全文检索、知识图谱和混合检索，提供可关联、可追溯、可扩展的知识管理与检索能力，并支持 GraphRAG。
 
 当前项目处于初始化阶段。`0.0.1` 为初始文档包，仅包含项目定位、许可证和 npm 包元数据，尚不提供运行时实现或可调用 API。下述能力属于项目规划，具体实现与 API 将在后续开发中确定。
 
 | 项目 | 内容 |
 |---|---|
-| 名称 | Knowledge Runtime |
-| 仓库 | [devcodex-labs/knowledge-runtime](https://github.com/devcodex-labs/knowledge-runtime) |
-| npm 包名 | `@devcodex/knowledge-runtime` |
+| 名称 | Knowkit |
+| 仓库 | [devcodex-labs/knowkit](https://github.com/devcodex-labs/knowkit) |
+| npm 包名 | `@devcodex/knowkit` |
 | 技术语言 | Node.js / TypeScript（规划） |
 | 类型 | 独立知识基础设施 |
 | 许可证 | [AGPL-3.0-or-later](./LICENSE) |
 
 ## 项目定位
 
-Knowledge Runtime 独立于特定 AI 模型、Agent 框架和宿主环境。它既可以作为 Node.js 模块使用，也可以成为 AI Agent、RAG 应用、企业知识库、代码分析和其他应用的底层知识基础设施。
+Knowkit 独立于特定 AI 模型、Agent 框架和宿主环境。它既可以作为 Node.js 模块使用，也可以成为 AI Agent、RAG 应用、企业知识库、代码分析和其他应用的底层知识基础设施。
 
 项目将语义召回与显式关系检索结合：向量检索发现语义相关内容，关键词检索定位精确术语，图关系检索沿知识之间的关联补充相关内容，混合检索统一融合与排序。
 
@@ -85,7 +85,7 @@ GraphRAG 是项目支持的检索方向。运行时不绑定单一 GraphRAG 算�
 
 ## 职责边界
 
-Knowledge Runtime 负责知识导入、组织、解析、切片和索引；向量、关键词、图关系与混合检索；关系、来源和版本管理；内容按需读取；以及结构化检索结果和来源证据。
+Knowkit 负责知识导入、组织、解析、切片和索引；向量、关键词、图关系与混合检索；关系、来源和版本管理；内容按需读取；以及结构化检索结果和来源证据。
 
 以下职责由调用方或其他模块承担：
 
@@ -112,27 +112,27 @@ Knowledge Runtime 负责知识导入、组织、解析、切片和索引；向�
 
 ## 与 DevCodex 其他模块的关系
 
-Knowledge Runtime 是独立基础模块，各运行时通过公开 API 组合使用。
+Knowkit 是独立基础模块，各运行时通过公开 API 组合使用。
 
 | 模块 | 职责 |
 |---|---|
 | Intent Runtime | 解析当前用户意图。 |
-| Knowledge Runtime | 根据查询条件检索知识与关联内容。 |
+| Knowkit | 根据查询条件检索知识与关联内容。 |
 | Memory Runtime | 管理历史记忆及其生命周期，可以复用知识检索基础能力。 |
 | Skill Runtime | 提供技能指导，并按需获取知识。 |
 | Context Runtime | 组织知识、记忆和其他上下文，供模型使用。 |
 | Execution Runtime | 执行任务并协调实际工作。 |
 
-Knowledge Runtime 不依赖这些运行时，也不承担它们的职责。
+Knowkit 不依赖这些运行时，也不承担它们的职责。
 
 ## 使用与分发规划
 
 项目计划提供统一的 Node.js / TypeScript API，允许调用方选择独立或混合检索，并按需读取知识。具体 API 与技术选型在后续开发中确定。
 
-npm 包名为 `@devcodex/knowledge-runtime`，初始版本为 `0.0.1`，用于分发项目定位和许可证。当前版本不包含运行时功能。
+npm 包名为 `@devcodex/knowkit`，初始版本为 `0.0.1`，用于分发项目定位和许可证。当前版本不包含运行时功能。
 
 后续发布方向为版本 tag 推送后经验证自动发布 npm，正式版与预发布版使用独立通道。当前尚未配置自动发布工作流。
 
 ## 许可证
 
-Knowledge Runtime 采用 **GNU Affero General Public License v3.0 or later**，SPDX 标识为 **AGPL-3.0-or-later**，与 DevCodex 项目保持一致。完整许可证正文见 [LICENSE](./LICENSE)。
+Knowkit 采用 **GNU Affero General Public License v3.0 or later**，SPDX 标识为 **AGPL-3.0-or-later**，与 DevCodex 项目保持一致。完整许可证正文见 [LICENSE](./LICENSE)。

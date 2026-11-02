@@ -1,20 +1,20 @@
 {
-  "name": "@devcodex/knowledge-runtime",
+  "name": "@devcodex/knowkit",
   "version": "0.0.1",
   "description": "Unified knowledge management and retrieval runtime for Node.js. Initial documentation release; runtime implementation is planned.",
   "license": "AGPL-3.0-or-later",
   "author": "DevCodex Labs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devcodex-labs/knowledge-runtime.git"
+    "url": "git+https://github.com/devcodex-labs/knowkit.git"
   },
-  "homepage": "https://github.com/devcodex-labs/knowledge-runtime#readme",
+  "homepage": "https://github.com/devcodex-labs/knowkit#readme",
   "bugs": {
-    "url": "https://github.com/devcodex-labs/knowledge-runtime/issues"
+    "url": "https://github.com/devcodex-labs/knowkit/issues"
   },
   "keywords": [
     "knowledge-management",
-    "knowledge-runtime",
+    "knowkit",
     "retrieval",
     "hybrid-search",
     "vector-search",
